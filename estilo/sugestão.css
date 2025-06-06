@@ -1,0 +1,195 @@
+* 
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*-------------------------------------------------------*/
+/*                 estilização do header                 */
+/*-------------------------------------------------------*/
+
+header 
+{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
+.h1mentha 
+{
+    font-size: 40px;
+    color: black;
+}
+
+.phome 
+{
+    font-size: 46px;
+}
+
+
+/*-------------------------------------------------------*/
+/*                       menu nav                        */
+/*-------------------------------------------------------*/
+
+nav 
+{
+    grid-area: nav;
+    height: auto;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+li 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+a 
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+.aul 
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+}
+
+
+.aul:hover 
+{
+    background-color: gray;
+}
+
+
+
+/*-------------------------------------------------------*/
+/*                         main                          */
+/*-------------------------------------------------------*/
+
+main 
+{
+
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+form
+{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.1); 
+}
+
+form:hover
+{
+    transform: scale(1.01);
+}
+
+button
+{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/*-------------------------------------------------------*/
+/*                        aside                          */
+/*-------------------------------------------------------*/
+
+
+aside {
+    grid-area: aside;
+}
+
+
+/*-------------------------------------------------------*/
+/*                       footer                          */
+/*-------------------------------------------------------*/
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+}
+
+#asugestão
+{
+    background-color: black;
+    color: white;
+
+}
+
+
+#asugestão:hover
+{
+    background-color: gray;
+}
+
+
+
+
+.container 
+{
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        ". main aside"
+        ". main aside"
+        "footer footer footer";
+    ;
+}
