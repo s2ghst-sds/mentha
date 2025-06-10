@@ -1,17 +1,22 @@
-* 
-{
+* {
     font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     padding: 0px;
 
 }
 
+body {
+    height: 1920px;
+    background-image: url("https://wallpapersok.com/images/hd/peppermint-mint-plant-3vupg215jefc5ipu.jpg");
+    background-attachment: fixed;
+    
+}
+
 /*-------------------------------------------------------*/
 /*                 estilização do header                 */
 /*-------------------------------------------------------*/
 
-header 
-{
+header {
     grid-area: header;
     display: flex;
     align-items: center;
@@ -21,14 +26,12 @@ header
     background-color: antiquewhite;
 }
 
-.h1mentha 
-{
+.h1mentha {
     font-size: 40px;
     color: black;
 }
 
-.phome 
-{
+.phome {
     font-size: 46px;
 }
 
@@ -37,18 +40,19 @@ header
 /*                       menu nav                        */
 /*-------------------------------------------------------*/
 
-nav 
-{
+nav {
     grid-area: nav;
     height: auto;
     background-color: black;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+
 
 }
 
-ul 
-{
+ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,8 +60,7 @@ ul
     list-style: none;
 }
 
-li 
-{
+li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,8 +68,7 @@ li
 
 }
 
-a 
-{
+a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -76,9 +78,10 @@ a
     height: auto;
 }
 
-.aul 
-{
+.aul {
     text-decoration: none;
+    position: sticky;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +93,7 @@ a
 }
 
 
-.aul:hover 
-{
+.aul:hover {
     background-color: gray;
 }
 
@@ -105,16 +107,50 @@ a
 
 
 
-main 
-{
+main {
     grid-area: main;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
 }
 
-aside 
+
+#ulsobre {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    width: auto;    
+}
+
+.sobrebanner {
+    max-width: 1920px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
+
+.textabout
 {
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+/*-------------------------------------------------------*/
+/*                       aside                           */
+/*-------------------------------------------------------*/
+
+aside {
     grid-area: aside;
 }
-
 
 /*-------------------------------------------------------*/
 /*                       footer                          */
@@ -122,36 +158,32 @@ aside
 
 
 
-footer 
-{
+footer {
     grid-area: footer;
     display: flex;
 }
 
-#asugestão
-{
+#asugestão {
     background-color: black;
     color: white;
-    
+
 }
 
-#asugestão:hover
-{
+#asugestão:hover {
     background-color: gray;
 }
 
 
 
 
-.container 
-{
+.container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        ". main aside"
-        ". main aside"
+        "main main main"
+        "main main main"
         "footer footer footer";
     ;
 }
