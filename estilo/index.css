@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 1920px;
     background-image: url("https://wallpapersok.com/images/hd/peppermint-mint-plant-3vupg215jefc5ipu.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,6 +13,18 @@ body {
 
 }
 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    ;
+}
 
 /*-------------------------------------------------------*/
 /*                 estilização do header                 */
@@ -55,7 +66,7 @@ nav {
 
 }
 
-ul {
+.navulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +74,7 @@ ul {
     list-style: none;
 }
 
-li {
+.navli {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,22 +118,9 @@ main {
     grid-area: main;
     justify-content: center;
     align-items: center;
-    display: flex;
     flex-direction: column;
     width: auto;
 
-}
-
-h2 {
-    color: antiquewhite;
-    font-size: xx-large;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.726);
-
-}
-
-#ulsobre {
-    display: flex;
-    flex-direction: column;
 }
 
 #sobre {
@@ -141,36 +139,89 @@ h2 {
 
 }
 
-.justtextabout {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+h2 {
+    color: antiquewhite;
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.726);
 }
 
 .background_textabout {
-    width: auto;
     background-color: antiquewhite;
     width: 100%;
     margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.justtextabout {
+    align-items: baseline;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 600px;
 
 }
 
 #p1 {
-    text-align: center;
+    text-align: justify;
     font-weight: lighter;
     letter-spacing: .05em;
     text-transform: uppercase;
     color: #272727;
     max-width: 435px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #p1::first-letter {
-    font-size: x-large;
+    font-size: 80px;
     color: green;
     font-weight: bolder;
+    float: left;
+    margin-right: 5px;
+    line-height: 0.8;
 }
+
+.pabout {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: .05em;
+    text-transform: lowercase;
+    color: #272727;
+    max-width: 435px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+#ulsobre {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    max-width: 435px;
+    flex-direction: column;
+    list-style-type: circle;
+}
+
+.liabout {
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 435px;
+    font-size: 20px;
+    letter-spacing: .05em;
+    text-transform: lowercase;
+}
+
 
 /*-------------------------------------------------------*/
 /*                       aside                           */
@@ -203,22 +254,3 @@ footer {
 #asugestão:hover {
     background-color: gray;
 }
-
-
-
-
-
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "main main main"
-        "footer footer footer";
-    ;
-}
-
-;
