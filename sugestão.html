@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> mentha | sugestão </title>
+    <title> mentha | 🍃</title>
     <link rel="stylesheet" href="estilo/sugestão.css">
     <link rel="icon" type="image/x-icon" href="icons/teacup.ico">
 </head>
@@ -15,7 +15,7 @@
 
         <header>
 
-            <h1><a class="h1mentha" href="index.html">mentha🍃</a></h1>
+            <h1 class="h1mentha"><a id="h1a" href="index.html" >mentha 🍃</a></h1>
             <p class="phome">sugestão</p>
 
         </header>
@@ -24,20 +24,14 @@
         <nav>
 
             <ul class="navulist">
-                <li><a class="aul" href="lavanda.html">lavanda</a></li>
-                <li><a class="aul" href="lavanda.html">lavanda</a></li>
-                <li><a class="aul" href="lavanda.html">flores/folhas</a></li>
-                <li><a class="aul" href="lavanda.html">flores/folhas</a></li>
-                <li><a class="aul" href="lavanda.html">flores/folhas</a></li>
+                <li class="navli"><a class="aul" href="lavanda.html">lavanda</a></li>
+                <li class="navli"><a class="aul" href="lavanda.html">lavanda</a></li>
             </ul>
 
-            <ul>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
-                <li><a class="aul" href="lavanda.html">queixas/dores</a></li>
+            <ul class="navulist">
+                <li class="navli"><a class="aul" href="lavanda.html">queixas/dores</a></li>
+                <li class="navli"><a class="aul" href="insonia.html">insônia</a></li>
+                <li class="navli"><a class="aul" href="lavanda.html">queixas/dores</a></li>
 
             </ul>
 
@@ -47,55 +41,79 @@
 
         <main>
 
-            <form action="https://formsubmit.co/ghst.sds@gmail.com" method="POST">
+            <section id="sobre">
 
-                <label for="nome">Digite seu nome:</label>
-                <input type="text" name="nome" placeholder="Digite seu nome!" required>
+                <div class="sobrebanner">
+                    <h2> sobre | <strong>mentha 🍃</strong> </h2>
+                </div>
 
-                <label for="email">Digite seu e-mail:</label>
-                <input type="email" name="email" placeholder="Digite seu e-mail!" required>
+                <div class="contform">
 
-                <label for="date">Selecione a data de hoje:</label>
-                <input type="date" name="date" placeholder="dd/mm/aaaa" required>
+                    <form action="https://formsubmit.co/ghst.sds@gmail.com" method="POST">
 
+                        <label for="nome">Digite seu nome:</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome!" required>
 
-                <fieldset>
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail!" required>
 
-                    <legend>Sobre o que é sua sugestão?</legend>
-
-                    <input type="radio" id="folha_chás" name="tiposug" value="folhas/chás" checked>
-                    <label for="folhas/chás">folhas/chás</label><br>
-
-                    <input type="radio" id="fruta" name="tiposug" value="fruta">
-                    <label for="fruta">fruta</label><br>
-
-                    <input type="radio" id="queixas" name="tiposug" value="queixas">
-                    <label for="queixas">queixas</label><br>
-
-                    <input type="radio" id="outro" name="tiposug" value="outro">
-                    <label for="outro">outro</label>
+                        <label for="date">Selecione a data de hoje:</label>
+                        <input type="date" name="date" placeholder="dd/mm/aaaa" required>
 
 
-                </fieldset>
+                        <fieldset>
 
-                <label for="textsug">Digite aqui sua sugestão:</label>
-                <textarea name="textsug" rows="4" cols="30" placeholder="Sua sugestão!" required></textarea>
+                            <legend>Sobre o que é sua sugestão?</legend>
 
-                <br>
+                            <input type="radio" id="folha_chás" name="tiposug" value="folhas/chás" checked>
+                            <label for="folhas/chás">folhas/chás</label><br>
+
+                            <input type="radio" id="fruta" name="tiposug" value="fruta">
+                            <label for="fruta">fruta</label><br>
+
+                            <input type="radio" id="queixas" name="tiposug" value="queixas">
+                            <label for="queixas">queixas</label><br>
+
+                            <input type="radio" id="outro" name="tiposug" value="outro">
+                            <label for="outro">outro</label>
 
 
-                <button type="submit">Enviar sugestão</button>
+                        </fieldset>
+
+                        <label for="textsug">Digite aqui sua sugestão:</label>
+                        <textarea name="textsug" rows="4" cols="30" placeholder="Sua sugestão!" required></textarea>
+
+                        <br>
 
 
-            </form>
+                        <button type="submit">Enviar sugestão</button>
+
+
+                    </form>
+
+                </div>
+
+
+            </section>
 
 
 
         </main>
-        <aside>aside</aside>
+        <footer>
 
-        <footer> 
-            <a id="asugestão" href="sugestão.html">Deixe sua sugestão!</a>
+            <p id="psug"> Sinta-se convidado a nos dar alguma sugestão de melhoria, chá,
+                fruta ou alguma queixa clicando no link abaixo! </p>
+
+            <div class="menthasug">
+                <h4 id="h4sug">mentha 🍃 </h4><a id="asugestão" href="login.html"> sugestão</a>
+            </div>
+
+
+
+            <p id="copyright">mentha 🍃 - Todos os direitos
+                reservados. Proibida reprodução total ou parcial. ©</p>
+
+
         </footer>
 
     </div>
