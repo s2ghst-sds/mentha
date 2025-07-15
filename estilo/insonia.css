@@ -40,7 +40,7 @@ header {
     background-color: antiquewhite;
 }
 
-.h1mentha {
+#h1mentha {
     font-size: 40px;
     color: black;
 }
@@ -49,7 +49,7 @@ header {
     font-size: 46px;
 }
 
-#h1a{
+#h1a {
     color: black;
     text-decoration: none;
 }
@@ -67,6 +67,7 @@ nav {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 
 
 }
@@ -141,7 +142,7 @@ main {
     color: antiquewhite;
 }
 
-.insomnia-article{
+.insomnia-article {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +151,60 @@ main {
     padding: 20px;
     text-align: center;
     gap: 10px;
+    width: 100%;
+    padding: 0px;
 }
+
+
+#h1insomnia {
+    text-align: justify;
+    font-weight: lighter;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #272727;
+    max-width: 435px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#h1insomnia::first-letter {
+    font-size: 80px;
+    color: green;
+    font-weight: bolder;
+    float: left;
+    margin-right: 5px;
+    line-height: 0.8;
+}
+
+.textcontainner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.what-is,
+.effects,
+.solutions,
+.solution-item,
+.conclusion,
+.cta {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: .05em;
+    text-transform: lowercase;
+    color: #272727;
+    max-width: 435px;
+    font-size: 20px;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
 
 
 
@@ -202,6 +256,8 @@ footer {
     color: antiquewhite;
     font-size: 28px;
     margin: 10px;
+    padding: 5px;
+
 
 }
 
@@ -229,6 +285,8 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
     bottom: 0px;
+    margin-bottom: 15px;
+
 }
 
 
@@ -253,6 +311,11 @@ footer {
         gap: 30px;
     }
 
+    .insomnia-article {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
 
 }
 
@@ -270,7 +333,7 @@ footer {
         max-width: 430px;
     }
 
-    .h1mentha,
+    #h1mentha,
     .phome {
         font-size: 28px;
     }
@@ -298,6 +361,21 @@ footer {
 
     h2 {
         font-size: 24px;
+    }
+
+    #h1insomnia {
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .what-is,
+    .effects,
+    .solutions,
+    .solution-item,
+    .conclusion,
+    .cta {
+        margin: 20px;
+        font-size: 18px;
     }
 
     .background_textabout {

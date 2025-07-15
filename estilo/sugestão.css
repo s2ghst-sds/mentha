@@ -49,7 +49,7 @@ header {
     font-size: 46px;
 }
 
-#h1a{
+#h1a {
     color: black;
     text-decoration: none;
 }
@@ -67,6 +67,8 @@ nav {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
+
 
 
 }
@@ -142,24 +144,82 @@ h2 {
 }
 
 .contform {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.contform form {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: antiquewhite;
+    gap: 15px;
+}
+
+.contform label {
+    font-weight: bold;
+    color: #555;
+}
+
+.contform input[type="text"],
+.contform input[type="email"],
+.contform input[type="date"],
+.contform textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 15px;
-    padding: 15px;
-    gap: 10px;
+.contform fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
+.contform legend {
+    font-weight: bold;
+    color: #555;
+    padding: 0 5px;
+}
+
+.contform input[type="radio"] {
+    margin-right: 8px;
+}
+
+.contform button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contform button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo similar ao da imagem */
+.contform input[type="text"]:focus,
+.contform input[type="email"]:focus,
+.contform input[type="date"]:focus,
+.contform textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.contform input::placeholder,
+.contform textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
 
 
 /*-------------------------------------------------------*/
@@ -210,6 +270,8 @@ footer {
     color: antiquewhite;
     font-size: 28px;
     margin: 10px;
+    padding: 5px;
+
 
 }
 
@@ -237,6 +299,8 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
     bottom: 0px;
+    margin-bottom: 15px;
+
 }
 
 

@@ -12,7 +12,8 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    min-height: 100vh;
+    /* Garante que o body ocupe toda a altura da tela */
     margin: 0;
 }
 
@@ -28,7 +29,8 @@ body {
         "footer footer footer";
     ;
 
-    flex: 1; /* Faz o container expandir e empurrar o footer para baixo */
+    flex: 1;
+    /* Faz o container expandir e empurrar o footer para baixo */
     grid-template-rows: auto auto 1fr auto;
 }
 
@@ -55,7 +57,7 @@ header {
     font-size: 46px;
 }
 
-#h1a{
+#h1a {
     color: black;
     text-decoration: none;
 }
@@ -74,6 +76,8 @@ nav {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
+
 
 
 }
@@ -163,7 +167,7 @@ h2 {
     margin-top: 20px;
 }
 
-.bothforms{
+.bothforms {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,22 +175,25 @@ h2 {
     width: auto;
 }
 
-#form-login, #form-cad {
+#form-login,
+#form-cad {
     background: antiquewhite;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    
+
 }
 
-#form-login label, #form-cad label {
+#form-login label,
+#form-cad label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
 
-#form-login input, #form-cad input {
+#form-login input,
+#form-cad input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -195,7 +202,8 @@ h2 {
     box-sizing: border-box;
 }
 
-#form-login button, #form-cad button {
+#form-login button,
+#form-cad button {
     width: 100%;
     padding: 10px;
     background: #4CAF50;
@@ -206,13 +214,14 @@ h2 {
     font-size: 16px;
 }
 
-#form-login button:hover, #form-cad button:hover {
+#form-login button:hover,
+#form-cad button:hover {
     background: #45a049;
 }
 
 
-.cad-btn{
-width: 85%;
+.cad-btn {
+    width: 85%;
 }
 
 #btn-cad {
@@ -231,7 +240,7 @@ width: 85%;
 }
 
 .aparecer-cad {
-    display: none; 
+    display: none;
 }
 
 #form-cad label {
@@ -252,6 +261,7 @@ width: 85%;
 #form-cad button:hover {
     background: rgb(151, 138, 223);
 }
+
 /*-------------------------------------------------------*/
 /*                       aside                           */
 /*-------------------------------------------------------*/
@@ -303,6 +313,8 @@ footer {
     color: antiquewhite;
     font-size: 28px;
     margin: 10px;
+    padding: 5px;
+
 
 }
 
@@ -311,6 +323,7 @@ footer {
     transition: 1s;
     font-size: 30px;
     border-radius: 15px;
+
 }
 
 #psug {
@@ -330,6 +343,8 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
     bottom: 0px;
+    margin-bottom: 15px;
+
 }
 
 
@@ -355,7 +370,7 @@ footer {
     }
 
 
-    .bothforms{
+    .bothforms {
         max-width: 430px;
     }
 
