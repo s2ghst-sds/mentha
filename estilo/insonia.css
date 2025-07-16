@@ -103,6 +103,22 @@ nav {
 
 }
 
+.aul-selected {
+    text-decoration: none;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: px;
+    border: 1px solid white;
+    background-color: grey;
+}
+
+
+
 .aul:hover {
     background-color: gray;
 }
@@ -194,9 +210,9 @@ main {
 .cta {
     font-size: 20px;
     margin-bottom: 20px;
-    text-align: justify;
     letter-spacing: .05em;
     text-transform: lowercase;
+    text-align: justify;
     color: #272727;
     max-width: 435px;
     font-size: 20px;
@@ -204,6 +220,20 @@ main {
     gap: 10px;
 
 }
+
+
+
+.ul-insomnia {
+    padding: 20px;
+    text-align: left;
+    list-style-position: outside;
+}
+
+
+.p-insomnia {
+    text-align: justify;
+}
+
 
 
 
@@ -319,18 +349,18 @@ footer {
 
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 499px) {
 
     * {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     body {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     header {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     #h1mentha,
@@ -339,15 +369,15 @@ footer {
     }
 
     nav {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     .navulist {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     .navli {
-        max-width: 430px;
+        max-width: 499px;
     }
 
     .aul {
@@ -355,7 +385,7 @@ footer {
     }
 
     .sobrebanner {
-        max-width: 430px;
+        max-width: 499px;
         max-height: 150px;
     }
 
@@ -383,7 +413,7 @@ footer {
     }
 
     .justtextabout {
-        max-width: 430px;
+        max-width: 499px;
         margin: 20px;
     }
 
