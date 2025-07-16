@@ -205,7 +205,6 @@ main {
 .what-is,
 .effects,
 .solutions,
-.solution-item,
 .conclusion,
 .cta {
     font-size: 20px;
@@ -219,6 +218,12 @@ main {
     margin-top: 20px;
     gap: 10px;
 
+}
+
+.solution-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
